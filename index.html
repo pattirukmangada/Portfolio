@@ -610,21 +610,24 @@
               <div class="form">
                 <div class="card-form">
                   <span class="title">Leave a Comment</span>
-                  <form action="https://formspree.io/f/xqkvazag" method="POST" class="form-card">
+                  <form action="https://formspree.io/f/xqkvazag" method="POST" id="form" class="form-card">
                     <div class="group">
-                      <input type="text" name="name">
+                      <input placeholder="" type="text" name="Name" required>
+                  <label for="name">Name</label>
                     </div>
                 <div class="group">
-                  <input type="email" name="email">
+                  <input placeholder="" type="email" name="Email" required="">
+                  <label for="email">Email</label>
                     </div>
                     <div class="group">
-                      <input type="number" name="phone">
+                      <input placeholder="" type="number" name="Number" required="">
+                      <label for="number">Number</label>
                 <div class="group">
                     <textarea placeholder=""  name="Message" rows="5" required=""></textarea>
                     <label for="comment">Comment</label>
                 </div>
                     <div class="form-submit">
-                      <button type="submit">Submit</button>
+                      <button type="submit" on.click="form">Submit</button>
                     </div>
                   </form>
             </div>
