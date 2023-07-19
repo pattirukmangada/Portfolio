@@ -14,8 +14,6 @@
 
     <link rel="stylesheet" href="index.css">  <!------css file------->
 
-    <link rel="sheet/javascript" href="index.js">  <!-------javascript file----------->
-
     <!----------------bootstrap start---------------------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
@@ -46,7 +44,7 @@
               <a class="nav-link jsl-trigger" href="#Services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-trigger" href="#Certificates">Certifiactes</a>
+              <a class="nav-link js-trigger" href="#Certificates">Certificates</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-trigger" href="#Portfilo">Projects</a>
@@ -310,7 +308,7 @@
          <div class="contain-service">
           <div class="row">
             <div class="col-md-4">
-              <div class="card" style="background-color:white; border-color:darkblue;">
+              <div class="card" style="background-color:white; border-color:darkblue;" data-aos="fade-left">
                 <img class="card-img-top" src="Web-.jpg" alt="Title">
                 <div class="card-body">
                   <h4 class="card-title">Web Developer</h4>
@@ -320,7 +318,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card" style="background-color:white; border-color:darkblue;">
+              <div class="card" style="background-color:white; border-color:darkblue;"data-aos="fade-right">
                 <img class="card-img-top" src="ui.jpg" alt="Title">
                 <div class="card-body">
                   <h4 class="card-title">UI / UX Designer</h4>
@@ -331,7 +329,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card" style="background-color:white; border-color:darkblue;">
+              <div class="card" style="background-color:white; border-color:darkblue;" data-aos="fade-left">
                 <img class="card-img-top" src="cloud.jpg" alt="Title">
                 <div class="card-body">
                   <h4 class="card-title">Cloud</h4>
@@ -394,26 +392,36 @@
             </div>
           </div>
           <div class="row">
-            .<div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                  <img src="Google Data.jpg" class="w-100 d-block" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img src="salesforce1.jpg" class="w-100 d-block" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img src="aws-cloud.jpg" class="w-100 d-block" alt="Third slide">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                .<div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <img src="Google Data.jpg" class="w-100 d-block" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="salesforce1.jpg" class="w-100 d-block" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="aws-cloud.jpg" class="w-100 d-block" alt="Third slide">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
+            </div>
+            <div class="col-md-2">
+
             </div>
           </div>
         </div>
@@ -464,7 +472,7 @@
         <div class="col-lg-6" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <div class="project-box">
             <div class="card-project">
-              <img src="proj-2.png" width="100%" height="420px" style="border-radius: 4px none;">
+              <img src="proj-2.png" class="card__img">
               <div class="card__descr-wrapper">
                 <p class="card__title"  style="color: cadetblue; text-align:center">
                Portfolio
@@ -519,7 +527,7 @@
         <div class="col-lg-6" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <div class="project-box">
             <div class="card-project">
-              <img src="todolist.png" width="100%" height="420px" style="border-radius: 4px none;">
+              <img src="todolist.png" class="card__img">
               <div class="card__descr-wrapper">
                 <p class="card__title"  style="color: cadetblue; text-align:center">
                To-Do Site
@@ -612,7 +620,7 @@
               <div class="form">
                 <div class="card-form">
                   <span class="title">Leave a Comment</span>
-                  <form action="https://formspree.io/f/meqboqjp" method="POST" id="form" class="form-card">
+                  <form action="https://formspree.io/f/xknlgrjr" method="POST" id="my-form" class="form-card">
                     <div class="group">
                       <input placeholder="" type="text" name="Name" required>
                   <label for="name">Name</label>
@@ -658,6 +666,7 @@
         AOS.init();
       </script>
 
+      <script src="index.js"></script>
       <!Footer section start>
 
 
