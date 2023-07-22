@@ -1,21 +1,19 @@
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
-
+/*-----------------Forms--------------*/
 window.onbeforeunload = () => {
   for(const form of document.getElementsByTagName('form')) {
     form.reset();
   }
 }
+/*-----------------form--------------*/
+
+/*-----------------Typed--------------*/
+
+var typed = new Typed('.auto-Type', {
+  strings: ['Web Developer', 'Ui/Ux Designer','App Developer','Youtuber'],
+  typeSpeed: 150,
+  backSpeed: 150,
+  loop: true
+});
+
+/*-----------------Typed--------------*/
