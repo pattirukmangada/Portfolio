@@ -140,12 +140,12 @@ body {
     box-shadow: inset 0px 0px 25px #1479EA;
 }
 .row-home-2 img{
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: 90vh;
   object-fit: cover;
   align-items: center;
   display:block;
-  margin-top: 7%;
+  padding-top: 5%;
 }
 
  /*-----------------------home end---------------------*/
