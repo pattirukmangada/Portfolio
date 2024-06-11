@@ -36,12 +36,13 @@ body {
 
   /*-------------------home start-----------------------------------*/
 .home{
-    height: 100%;
+    height: auto;
     width:100%;
     background-color: black;  
 }
 .home-content{
-    padding-top: 27%;
+    margin-top: 20%;
+    padding-top: 5%;
     padding-left: 5%;
     max-width: 100%;
     height: 100%;
@@ -140,11 +141,11 @@ body {
     box-shadow: inset 0px 0px 25px #1479EA;
 }
 .row-home-2 img{
-  width: 100% !important;
-  height: 90vh;
-  object-fit: cover;
+  width: 90% !important;
+  height: 500PX;
+  object-fit:fill;
   align-items: center;
-  display:block;
+  display:flex;
   padding-top: 5%;
 }
 
@@ -934,4 +935,65 @@ background-color:#eaeaea;
   color: #f2f2f2;
   text-align: center;
   padding-top: 10px;
+}
+
+
+
+
+
+
+/*-------------------responsive start-------------------*/  
+.Home-A-card {
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px  rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.Home-A-card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 5px 5px  rgba(0, 0, 0, 0.705);
+  background: rgb(0, 0, 0);
+}
+
+.first-content {
+  height: 100vh;
+  width: 100%;
+  transition: all 0.10s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.Home-A-card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 100vh;
+  width: auto;
+  opacity: 0;
+  display:inline;
+  justify-content:center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.10s;
+  font-size: 0px;
+  transform: rotate(180deg) scale(-1);
+}
+
+.Home-A-card:hover .second-content {
+  opacity: 1;
+  height: auto;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
 }
