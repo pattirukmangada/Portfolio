@@ -521,17 +521,14 @@ h2, h3 {
   /*---------------------------Resume end------------------------------------------*/
 
   /*--------------------------------services start-----------------------*/
-  .container-Services{
-    width: 100%;
-    height: 100%;
-  }
   .card-body h4{
     color:red;
     font-weight: 400;
     text-align: center;
   }
   .contain-service{
-    padding-top: 5%;
+    width: 100%;
+    height: 100%;
    }
  .card-img-top{
   display: flex;
